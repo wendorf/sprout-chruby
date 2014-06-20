@@ -1,6 +1,6 @@
-# sprout-exemplar cookbook
+# sprout-chruby cookbook
 
-[![Build Status](https://travis-ci.org/pivotal-sprout/sprout-exemplar.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-exemplar)
+[![Build Status](https://travis-ci.org/pivotal-sprout/sprout-chruby.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-chruby)
 
 Template repo for creating standalone cookbooks
 
@@ -22,14 +22,14 @@ bundle exec soloist
 
 ### Attributes
 
-*NOTE:* All preferences are namespaced under `sprout => exemplar` they include:
+*NOTE:* All preferences are namespaced under `sprout => chruby` they include:
 
-* `path` &mdash; The path to the file that exemplar touches; default is `~/exemplar`
+* `path` &mdash; The path to the file that chruby touches; default is `~/chruby`
 
 ### Recipes
 
-1. `sprout-exemplar`
-1. `sprout-exemplar::path`
+1. `sprout-chruby`
+1. `sprout-chruby::path`
 
 ## Contributing
 
@@ -70,7 +70,7 @@ bundle exec rake spec:unit
 Integrations specs will run the default recipe on the host system (destructive) and make assertions on the system after
 install.
 
-*Note:* It has a precondition that exemplar is _not_ already installed on the system.
+*Note:* It has a precondition that chruby is _not_ already installed on the system.
 
 ```
 bundle

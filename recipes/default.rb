@@ -1,1 +1,1 @@
-include_recipe 'sprout-exemplar::path'
+include_recipe 'sprout-chruby::path'

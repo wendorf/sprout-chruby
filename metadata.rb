@@ -1,4 +1,4 @@
-name             'sprout-exemplar'
+name             'sprout-chruby'
 maintainer       'Pivotal'
 maintainer_email 'sprout-maintainers@pivotallabs.com'
 license          'MIT'
