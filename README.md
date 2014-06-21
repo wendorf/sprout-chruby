@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/pivotal-sprout/sprout-chruby.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-chruby)
 
-Template repo for creating standalone cookbooks
+Manage chruby on OS X
 
 ## Usage
 
@@ -24,12 +24,15 @@ bundle exec soloist
 
 *NOTE:* All preferences are namespaced under `sprout => chruby` they include:
 
-* `path` &mdash; The path to the file that chruby touches; default is `~/chruby`
+* `['default_ruby']` &mdash; the default ruby version to use
+* `['rubies']` &mdash; rubies to install
 
 ### Recipes
 
 1. `sprout-chruby`
-1. `sprout-chruby::path`
+1. `sprout-chruby::chruby_auto`
+1. `sprout-chruby::default_ruby`
+1. `sprout-chruby::rubies`
 
 ## Contributing
 
