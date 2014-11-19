@@ -1,7 +1,7 @@
 require 'unit/spec_helper'
 
 describe 'sprout-chruby::chruby' do
-  let(:runner) { ChefSpec::Runner.new }
+  let(:runner) { ChefSpec::SoloRunner.new }
 
   before { runner.converge(described_recipe) }
 

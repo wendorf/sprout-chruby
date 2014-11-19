@@ -1,7 +1,7 @@
 require 'unit/spec_helper'
 
 describe 'sprout-chruby::default_ruby' do
-  let(:runner) { ChefSpec::Runner.new }
+  let(:runner) { ChefSpec::SoloRunner.new }
 
   it 'sets the default ruby' do
     runner.converge(described_recipe)

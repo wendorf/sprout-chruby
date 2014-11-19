@@ -1,7 +1,7 @@
 require 'unit/spec_helper'
 
 describe 'sprout-chruby::rubies' do
-  let(:runner) { ChefSpec::Runner.new }
+  let(:runner) { ChefSpec::SoloRunner.new }
 
   it 'installs a default list of rubies' do
     runner.converge(described_recipe)
