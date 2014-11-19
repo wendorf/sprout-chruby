@@ -3,6 +3,12 @@ require 'unit/spec_helper'
 describe 'sprout-chruby::chruby' do
   let(:runner) { ChefSpec::Runner.new }
 
+  before { runner.converge(described_recipe) }
+
+  it 'installs the chruby package' do
+    expect(runner).to install_package('chruby')
+  end
+
   it 'installs the bash-it plugin chruby-auto' do
     runner.converge(described_recipe)
 
