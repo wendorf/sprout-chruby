@@ -7,3 +7,5 @@ if node['sprout']['chruby']['auto_change_ruby']
 else
   sprout_base_bash_it_enable_feature 'plugins/chruby'
 end
+
+include_recipe 'sprout-chruby::default_ruby'

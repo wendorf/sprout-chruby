@@ -14,6 +14,10 @@ describe 'sprout-chruby::chruby' do
     expect(runner).to install_package('chruby')
   end
 
+  it 'runs the default_ruby recipe' do
+    expect(runner).to include_recipe 'sprout-chruby::default_ruby'
+  end
+
   context 'when sprout.chruby.auto_change_ruby is true' do
     let(:auto_change_ruby) { true }
 
