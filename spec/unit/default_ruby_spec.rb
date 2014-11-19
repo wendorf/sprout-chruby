@@ -30,7 +30,7 @@ describe 'sprout-chruby::default_ruby' do
     context 'when sprout.chruby.auto_change_ruby is not true' do
       let(:auto_change_ruby) { false }
 
-      it 'does not create a .ruby-version file in sprout.home'do
+      it 'does not create a .ruby-version file in sprout.home' do
         expect(runner).not_to render_file(ruby_version_file)
       end
 
@@ -46,7 +46,7 @@ describe 'sprout-chruby::default_ruby' do
       runner.converge(described_recipe)
     end
 
-    it 'does not create a .ruby-version file in sprout.home'do
+    it 'does not create a .ruby-version file in sprout.home' do
       expect(runner).not_to render_file(ruby_version_file)
     end
 
