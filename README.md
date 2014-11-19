@@ -24,6 +24,7 @@ bundle exec soloist
 
 *NOTE:* All preferences are namespaced under `sprout => chruby` they include:
 
+* `[auto_change_ruby]` &mdash; Boolean indicating whether to enable [auto-switching in chruby](https://github.com/postmodern/chruby#auto-switching)
 * `['default_ruby']` &mdash; the default ruby version to use
 * `['rubies']` &mdash; rubies to install
 
