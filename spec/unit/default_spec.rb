@@ -16,7 +16,7 @@ describe 'sprout-chruby::default' do
     expect(runner).to include_recipe 'sprout-chruby::default_ruby'
   end
 
-  it 'installs chruby-auto by default' do
-    expect(runner).to include_recipe 'sprout-chruby::chruby_auto'
+  it 'installs chruby by default' do
+    expect(runner).to include_recipe 'sprout-chruby::chruby'
   end
 end

@@ -30,7 +30,7 @@ bundle exec soloist
 ### Recipes
 
 1. `sprout-chruby`
-1. `sprout-chruby::chruby_auto`
+1. `sprout-chruby::chruby`
 1. `sprout-chruby::default_ruby`
 1. `sprout-chruby::rubies`
 

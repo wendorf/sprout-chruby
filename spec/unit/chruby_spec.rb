@@ -1,6 +1,6 @@
 require 'unit/spec_helper'
 
-describe 'sprout-chruby::chruby_auto' do
+describe 'sprout-chruby::chruby' do
   let(:runner) { ChefSpec::Runner.new }
 
   it 'installs the bash-it plugin chruby-auto' do
