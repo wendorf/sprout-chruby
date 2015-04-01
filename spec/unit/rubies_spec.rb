@@ -3,7 +3,7 @@ require 'unit/spec_helper'
 describe 'sprout-chruby::rubies' do
   let(:runner) { ChefSpec::SoloRunner.new }
 
-  let(:ruby_install_cmd) { "ruby-install --install-dir #{runner.node['sprout']['chruby']['install_dir']}" }
+  let(:ruby_install_cmd) { "ruby-install --rubies-dir #{runner.node['sprout']['chruby']['rubies_dir']}" }
 
   it 'installs a default list of rubies' do
     runner.converge(described_recipe)
@@ -32,7 +32,7 @@ describe 'sprout-chruby::rubies' do
 
     runner.converge(described_recipe)
 
-    expect(Dir).to have_received(:exist?).with(File.join(runner.node['sprout']['chruby']['install_dir'], 'ruby-2.1.2'))
+    expect(Dir).to have_received(:exist?).with(File.join(runner.node['sprout']['chruby']['rubies_dir'], 'ruby-2.1.2'))
 
     expect(runner).not_to run_execute("#{ruby_install_cmd} ruby 2.1.2")
   end
