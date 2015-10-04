@@ -1,2 +1,9 @@
 recipes:
   - sprout-chruby
+
+node_attributes:
+  sprout:
+    chruby:
+      rubies:
+        ruby:
+          - '2.2.3'
